@@ -1,0 +1,19 @@
+# Step 1: commit setup files
+git add .gitignore LICENSE README.md requirements.txt
+GIT_COMMITTER_DATE="2025-07-10 10:00:00" git commit --date="2025-07-10 10:00:00" -m "Initial project setup"
+
+# Step 2: commit main app code
+git add financial_research_agent/__init__.py financial_research_agent/main.py financial_research_agent/mainvoice.py
+GIT_COMMITTER_DATE="2025-07-12 14:00:00" git commit --date="2025-07-12 14:00:00" -m "Add core application scripts"
+
+# Step 3: commit utilities
+git add financial_research_agent/agent.py financial_research_agent/voice_tools.py
+GIT_COMMITTER_DATE="2025-07-13 09:00:00" git commit --date="2025-07-13 09:00:00" -m "Add helper modules"
+
+# Step 4: commit assets/data
+git add data/ assets/
+GIT_COMMITTER_DATE="2025-07-14 11:00:00" git commit --date="2025-07-14 11:00:00" -m "Add static assets and data"
+
+# Step 5: commit tests
+git add tests/
+GIT_COMMITTER_DATE="2025-07-15 15:00:00" git commit --date="2025-07-15 15:00:00" -m "Add tests"
